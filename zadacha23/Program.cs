@@ -5,3 +5,13 @@
 // 3 -> 1, 8, 27
 // 5 -> 1, 8, 27, 64, 125
 
+Console.WriteLine("Напишите любое число");
+int N = Convert.ToInt32(Console.ReadLine());
+int count = 1;
+int result = 1;
+while (N >= count)
+{
+    result = count * count * count;
+    Console.Write($"{result}, ");
+    count +=1;
+}
